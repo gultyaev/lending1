@@ -6,8 +6,6 @@ $(document).ready(function(){
     speed: 1500,
   });
 
-  $('.loader').remove()
-
   if (!sessionStorage.getItem('time')) {
     sessionStorage.setItem('time', moment().add(20, 'minutes').format('x'));
   }

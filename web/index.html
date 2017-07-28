@@ -6,15 +6,38 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Покровський житловий комплекс</title>
-  <link rel="stylesheet" href="index.css"/>
-
-  <!-- jQuery library (served from Google) -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" defer></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js" defer></script>
   <script src="./js/bxslider.js" defer></script>
-  <script src="./js/index.js" defer></script>
+  <style>
+    .loader {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: #ffffff;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .loader:after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      border: 10px solid transparent;
+      border-right-color: red;
+      animation: loader-spinning 2s both infinite;
+    }
+  </style>
 </head>
 <body>
+
+<div class="loader"></div>
 
 <section>
   <div class="promo">
@@ -165,6 +188,9 @@
     </ul>
   </footer>
 </section><!--End of counter + footer-->
+
+<link rel="stylesheet" href="index.css"/>
+<script src="./js/index.js" defer></script>
 
 </body>
 </html>
