@@ -11,6 +11,10 @@
   <script src="./js/bxslider.js" defer></script>
   <script src="./js/index.js" defer></script>
   <style>
+    @keyframes loader-spinning {
+      from {transform: rotate(0)}
+      to {transform: rotate(360deg)}
+    }
     .loader {
       position: relative;
       top: 0;
@@ -33,10 +37,6 @@
       border: 10px solid transparent;
       border-right-color: red;
       animation: loader-spinning 2s both infinite;
-    }
-    @keyframes loader-spinning {
-      from {transform: rotate(0)}
-      to {transform: rotate(360deg)}
     }
   </style>
 </head>
