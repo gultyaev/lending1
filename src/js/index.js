@@ -4,6 +4,7 @@ $(document).ready(function(){
     captions: true,
     controls: true,
     speed: 1500,
+    preload: 'visible',
   });
 
   if (!sessionStorage.getItem('time')) {

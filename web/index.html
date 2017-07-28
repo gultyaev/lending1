@@ -33,6 +33,10 @@
       border-right-color: red;
       animation: loader-spinning 2s both infinite;
     }
+    @keyframes loader-spinning {
+      from {transform: rotate(0)}
+      to {transform: rotate(360deg)}
+    }
   </style>
 </head>
 <body>
@@ -189,7 +193,7 @@
   </footer>
 </section><!--End of counter + footer-->
 
-<link rel="stylesheet" href="index.css"/>
+<link rel="stylesheet" href="index.css" onload="$('.loader').remove();"/>
 <script src="./js/index.js" defer></script>
 
 </body>

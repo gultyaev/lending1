@@ -5,10 +5,9 @@ $(document).ready(function () {
     auto: true,
     captions: true,
     controls: true,
-    speed: 1500
+    speed: 1500,
+    preload: 'visible'
   });
-
-  $('.loader').remove();
 
   if (!sessionStorage.getItem('time')) {
     sessionStorage.setItem('time', moment().add(20, 'minutes').format('x'));
